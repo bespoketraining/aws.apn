@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /apply_schedule
+Disallow: /apply_schedule_thankyou
+
+Sitemap: https://aws.apn.bespoketraining.com/sitemap.xml

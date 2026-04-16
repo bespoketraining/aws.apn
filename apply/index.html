@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prepare for Your Discovery Call — AWS Partner Funding | Bespoke Training</title>
+  <meta name="description" content="Answer a few quick questions so Trent can prepare a tailored enablement session for your AWS Partner organisation. Takes less than 60 seconds." />
+  <link rel="canonical" href="https://aws.apn.bespoketraining.com/apply" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Prepare for Your Discovery Call — AWS Partner Acceleration Funding" />
+  <meta property="og:description" content="Help us tailor your free 30-minute discovery call. Answer a few quick questions about your organisation and AWS goals — takes less than 60 seconds." />
+  <meta property="og:image" content="https://aws.apn.bespoketraining.com/og-image.jpg" />
+  <meta property="og:url" content="https://aws.apn.bespoketraining.com/apply" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bespoke Training" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#242c96',
+            green: '#8bc53f',
+            lightblue: '#0086dd',
+            charcoal: '#282828',
+            orange: '#f6541e',
+          },
+          fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .form-input {
+      width: 100%; padding: 12px 16px; border: 2px solid #e5e7eb; border-radius: 10px;
+      font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: #282828;
+      transition: border-color 0.2s; outline: none;
+    }
+    .form-input:focus { border-color: #242c96; }
+    .form-label { display: block; font-size: 0.85rem; font-weight: 600; color: #282828; margin-bottom: 6px; }
+    .radio-option {
+      display: flex; align-items: center; gap: 10px;
+      border: 2px solid #e5e7eb; border-radius: 10px;
+      padding: 12px 16px; cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      font-size: 0.9rem;
+    }
+    .radio-option:has(input:checked) { border-color: #242c96; background: rgba(36,44,150,0.05); }
+    .radio-option input[type="radio"],
+    .radio-option input[type="checkbox"] { accent-color: #242c96; width: 16px; height: 16px; flex-shrink: 0; cursor: pointer; }
+    .progress-step { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; }
+    .step-active { background: #242c96; color: white; }
+    .step-done { background: #8bc53f; color: white; }
+    .step-pending { background: #e5e7eb; color: #9ca3af; }
+  </style>
+</head>
+<body class="bg-gray-50 text-[#282828]">
+
+  <!-- NAV -->
+  <nav class="bg-[#242c96] shadow-lg">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/">
+        <img src="../Bespoke-logo-white.png" alt="Bespoke Training Services" class="h-10 w-auto" />
+      </a>
+      <div class="text-white/60 text-sm hidden md:block">AWS Partner Acceleration Funding 2026</div>
+    </div>
+  </nav>
+
+  <!-- PROGRESS BAR -->
+  <div class="bg-white border-b border-gray-100 py-4">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="flex items-center gap-3">
+        <div class="progress-step step-active">1</div>
+        <div class="flex-1 h-1 bg-gray-200 rounded-full"><div class="h-1 bg-[#8bc53f] rounded-full w-1/3"></div></div>
+        <div class="progress-step step-pending">2</div>
+        <div class="flex-1 h-1 bg-gray-200 rounded-full"></div>
+        <div class="progress-step step-pending">3</div>
+      </div>
+      <div class="flex justify-between mt-2">
+        <span class="text-xs font-semibold text-[#242c96]">About Your Organisation</span>
+        <span class="text-xs text-gray-400 ml-6">Book Discovery Call</span>
+        <span class="text-xs text-gray-400">Confirmed</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="bg-white pt-10 pb-6 border-b border-gray-100">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <div class="inline-block bg-[#f6541e] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">2026 Acceleration Funding Open</div>
+      <h1 class="text-3xl md:text-4xl font-black text-[#242c96] mb-3">
+        Prepare for Your Discovery Call
+      </h1>
+      <p class="text-[#282828] max-w-lg mx-auto">
+        Answer a few quick questions so Trent can tailor the session to your organisation's specific situation — takes under 60 seconds.
+      </p>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="max-w-2xl mx-auto px-6 py-10">
+
+    <form id="eligibilityForm" novalidate>
+
+      <!-- Name + Email -->
+      <div class="grid md:grid-cols-2 gap-5 mb-6">
+        <div>
+          <label class="form-label" for="firstName">First Name <span class="text-[#f6541e]">*</span></label>
+          <input class="form-input" type="text" id="firstName" name="firstName" placeholder="e.g. Sarah" required />
+        </div>
+        <div>
+          <label class="form-label" for="lastName">Last Name <span class="text-[#f6541e]">*</span></label>
+          <input class="form-input" type="text" id="lastName" name="lastName" placeholder="e.g. Thompson" required />
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label class="form-label" for="email">Work Email Address <span class="text-[#f6541e]">*</span></label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="you@company.com" required />
+        <p class="text-xs text-gray-400 mt-1">Please use your work email</p>
+      </div>
+
+      <!-- Organisation -->
+      <div class="grid md:grid-cols-2 gap-5 mb-6">
+        <div>
+          <label class="form-label" for="orgName">Organisation Name <span class="text-[#f6541e]">*</span></label>
+          <input class="form-input" type="text" id="orgName" name="orgName" placeholder="e.g. Acme Cloud Solutions" required />
+        </div>
+        <div>
+          <label class="form-label" for="partnerTier">AWS Partner Tier <span class="text-[#f6541e]">*</span></label>
+          <select class="form-input" id="partnerTier" name="partnerTier" required>
+            <option value="" disabled selected>Select tier...</option>
+            <option value="Global Systems Integrator">Global Systems Integrator</option>
+            <option value="Consulting Partner - Premier">Consulting Partner - Premier</option>
+            <option value="Consulting Partner - Advanced">Consulting Partner - Advanced</option>
+            <option value="Consulting Partner - Standard">Consulting Partner - Select</option>
+            <option value="Technology Partner - Advanced">Technology Partner - Advanced</option>
+            <option value="Technology Partner - Standard">Technology Partner - Select</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Team Size -->
+      <div class="mb-6">
+        <label class="form-label">Team Size (people who would benefit from training) <span class="text-[#f6541e]">*</span></label>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <label class="radio-option">
+            <input type="radio" name="teamSize" value="5" required />
+            <span>5</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="teamSize" value="6-10" />
+            <span>6 – 10</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="teamSize" value="11-15" />
+            <span>11 – 15</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="teamSize" value="16+" />
+            <span>16+</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Primary Capability Gap -->
+      <div class="mb-6">
+        <label class="form-label">Primary Capability Area of Interest <span class="text-[#f6541e]">*</span> <span class="text-xs text-gray-400 font-normal ml-1">(select all that apply)</span></label>
+        <div class="grid md:grid-cols-2 gap-3">
+          <label class="radio-option">
+            <input type="checkbox" name="capability[]" value="Gen AI / Machine Learning" />
+            <span class="flex-1">Gen AI &amp; Machine Learning <span class="text-xs text-[#8bc53f] font-semibold ml-1">Most Popular</span></span>
+          </label>
+          <label class="radio-option">
+            <input type="checkbox" name="capability[]" value="Cloud Infrastructure" />
+            <span>Cloud Infrastructure</span>
+          </label>
+          <label class="radio-option">
+            <input type="checkbox" name="capability[]" value="Application Development" />
+            <span>Application Development</span>
+          </label>
+          <label class="radio-option">
+            <input type="checkbox" name="capability[]" value="Security & Risk" />
+            <span>Security &amp; Risk</span>
+          </label>
+          <label class="radio-option">
+            <input type="checkbox" name="capability[]" value="Cost Optimisation" />
+            <span>Cost Optimisation</span>
+          </label>
+          <label class="radio-option">
+            <input type="checkbox" name="capability[]" value="Not sure yet" />
+            <span>Not sure yet</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Role -->
+      <div class="mb-6">
+        <label class="form-label" for="role">Your Role <span class="text-[#f6541e]">*</span></label>
+        <select class="form-input" id="role" name="role" required>
+          <option value="" disabled selected>Select your role...</option>
+          <option value="C-Level">C-Level</option>
+          <option value="Executive">Executive</option>
+          <option value="Manager">Manager</option>
+          <option value="Professional">Professional</option>
+          <option value="Training Manager / L&D">Training Manager / L&D</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Timeline -->
+      <div class="mb-8">
+        <label class="form-label">When are you looking to start training? <span class="text-[#f6541e]">*</span></label>
+        <div class="grid md:grid-cols-2 gap-3">
+          <label class="radio-option">
+            <input type="radio" name="timeline" value="0 - 3 months" required />
+            <span>0 – 3 months</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="timeline" value="3 - 6 months" />
+            <span>3 – 6 months</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="timeline" value="6+ months" />
+            <span>6+ months</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="timeline" value="Not sure - please advise" />
+            <span>Not sure — please advise</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Error message -->
+      <div id="formError" class="hidden bg-red-50 border border-red-200 text-red-700 text-sm rounded-xl px-5 py-4 mb-5">
+        Please fill in all required fields before continuing.
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" id="submitBtn"
+        class="w-full bg-[#8bc53f] hover:bg-[#7ab034] text-white font-bold text-lg py-4 rounded-xl transition-all hover:-translate-y-0.5 hover:shadow-lg">
+        Book My Discovery Call &rarr;
+      </button>
+
+      <p class="text-center text-xs text-gray-400 mt-4">
+        By submitting, you agree to be contacted by Bespoke Training Services regarding this program.
+        Your information is never sold or shared with third parties.
+      </p>
+
+    </form>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="bg-[#242c96] text-white py-8 mt-4">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="flex flex-wrap items-center justify-center gap-8 text-center">
+        <div>
+          <div class="font-black text-xl text-[#8bc53f]">13+ Years</div>
+          <div class="text-xs text-white/60">AWS Training Partner</div>
+        </div>
+        <div>
+          <div class="font-black text-xl text-[#8bc53f]">40,050+</div>
+          <div class="text-xs text-white/60">Learners Trained</div>
+        </div>
+        <div>
+          <div class="font-black text-xl text-[#8bc53f]">1,200+</div>
+          <div class="text-xs text-white/60">Organisations Served</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('eligibilityForm');
+    const errorBox = document.getElementById('formError');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      errorBox.classList.add('hidden');
+
+      // Validate
+      const required = ['firstName', 'lastName', 'email', 'orgName', 'partnerTier', 'role'];
+      const radioGroups = ['teamSize', 'timeline'];
+      let valid = true;
+
+      required.forEach(id => {
+        if (!document.getElementById(id).value.trim()) valid = false;
+      });
+
+      radioGroups.forEach(name => {
+        if (!form.querySelector(`input[name="${name}"]:checked`)) valid = false;
+      });
+
+      // Require at least one capability checkbox
+      if (!form.querySelectorAll('input[name="capability[]"]:checked').length) valid = false;
+
+      // Basic email validation
+      const email = document.getElementById('email').value;
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) valid = false;
+
+      if (!valid) {
+        errorBox.classList.remove('hidden');
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Show loading state
+      submitBtn.textContent = 'Booking your call...';
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-75');
+
+      // Collect form data
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const emailVal = document.getElementById('email').value.trim();
+      const capabilities = [...form.querySelectorAll('input[name="capability[]"]:checked')].map(cb => cb.value).join(', ');
+
+      // POST to Pardot via hidden iframe (avoids CORS entirely)
+      // TODO: Update Pardot form handler URL for AWS Partner program
+      const pardotIframe = document.createElement('iframe');
+      pardotIframe.name = 'pardot-target';
+      pardotIframe.style.display = 'none';
+      document.body.appendChild(pardotIframe);
+
+      const pardotForm = document.createElement('form');
+      pardotForm.method = 'POST';
+      pardotForm.action = 'https://go.bespoketraining.com/l/414682/2026-04-16/wtlfny';
+      pardotForm.target = 'pardot-target';
+
+      const pardotFields = {
+        first_name: firstName,
+        last_name: lastName,
+        email: emailVal,
+        company: document.getElementById('orgName').value.trim(),
+        Team_Size__c: form.querySelector('input[name="teamSize"]:checked').value,
+        Capability_Area_of_Interest__c: capabilities,
+        role: document.getElementById('role').value,
+        timeline: form.querySelector('input[name="timeline"]:checked').value,
+        'AWS Partner Level': document.getElementById('partnerTier').value
+      };
+
+      Object.entries(pardotFields).forEach(([name, value]) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        pardotForm.appendChild(input);
+      });
+
+      document.body.appendChild(pardotForm);
+      pardotForm.submit();
+
+      // Short delay to allow iframe POST to initiate before navigating
+      setTimeout(() => {
+        window.location.href = `/apply_schedule?name=${encodeURIComponent(firstName + ' ' + lastName)}&email=${encodeURIComponent(emailVal)}`;
+      }, 1500);
+    });
+  </script>
+
+</body>
+</html>
