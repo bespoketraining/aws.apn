@@ -356,7 +356,7 @@
 
       // Short delay to allow iframe POST to initiate before navigating
       setTimeout(() => {
-        window.location.href = `/apply_schedule?name=${encodeURIComponent(firstName + ' ' + lastName)}&email=${encodeURIComponent(emailVal)}`;
+        window.location.href = `../apply_schedule/?name=${encodeURIComponent(firstName + ' ' + lastName)}&email=${encodeURIComponent(emailVal)}`;
       }, 1500);
     });
   </script>
