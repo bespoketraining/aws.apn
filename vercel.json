@@ -9,6 +9,42 @@
       "permanent": true
     },
     {
+      "source": "/apply",
+      "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
+      "destination": "https://www.bespoketraining.com/aws/apn/apply/",
+      "permanent": true
+    },
+    {
+      "source": "/apply/",
+      "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
+      "destination": "https://www.bespoketraining.com/aws/apn/apply/",
+      "permanent": true
+    },
+    {
+      "source": "/apply_schedule",
+      "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
+      "destination": "https://www.bespoketraining.com/aws/apn/apply_schedule/",
+      "permanent": true
+    },
+    {
+      "source": "/apply_schedule/",
+      "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
+      "destination": "https://www.bespoketraining.com/aws/apn/apply_schedule/",
+      "permanent": true
+    },
+    {
+      "source": "/apply_schedule_thankyou",
+      "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
+      "destination": "https://www.bespoketraining.com/aws/apn/apply_schedule_thankyou/",
+      "permanent": true
+    },
+    {
+      "source": "/apply_schedule_thankyou/",
+      "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
+      "destination": "https://www.bespoketraining.com/aws/apn/apply_schedule_thankyou/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "aws.apn.bespoketraining.com" }],
       "destination": "https://www.bespoketraining.com/aws/apn/:path*",
