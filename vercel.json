@@ -1,0 +1,12 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/aws/apn/", "destination": "/" },
+    { "source": "/aws/apn/apply", "destination": "/apply" },
+    { "source": "/aws/apn/apply_schedule", "destination": "/apply_schedule" },
+    { "source": "/aws/apn/apply_schedule_thankyou", "destination": "/apply_schedule_thankyou" },
+    { "source": "/aws/apn/assets/:file*", "destination": "/assets/:file*" },
+    { "source": "/aws/apn/:path*", "destination": "/:path*" }
+  ]
+}
