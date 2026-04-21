@@ -179,7 +179,7 @@
     // Redirect to thank you page when Calendly booking is confirmed
     window.addEventListener('message', function(e) {
       if (e.data.event && e.data.event === 'calendly.event_scheduled') {
-        window.location.href = '/apply_schedule_thankyou';
+        window.location.href = '../apply_schedule_thankyou/';
       }
     });
   </script>
